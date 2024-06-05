@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>visual novel club homepage</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <script src="scripts/funscipt.js"></script>
+    </head>
+    
+    <body>
+        <!-- header content, main menu -->
+        <header>
+            <div>
+                <a href="index.html"><img src="images/logo.png" alt="visual novel club mascot and logo, vee-en" width= "100" style="float:left;" draggable="false"></a>
+                <h1>Visual Novel Club Sign Up</h1>
+            </div>
+            <nav>
+                <!--insert list here of future links-->
+                <ul id="navigationLinks">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="calendarpage.html">calendar</a></li>
+                    <li><a href="signup.html">sign up</a></li>
+                </ul>
+                <!-- this is hidden until the screen is identified as less than 900 pixels -->
+                <div id="mobileDropdown">
+                    <button class="siteButton">Navigation</button>
+                    <ul id="mobileNavLinks">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="calendarpage.html">calendar</a></li>
+                        <li><a href="signup.html">sign up</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="content">
+            <div id="contentBody">
+                <!-- sign up form, check module for all that you need to add -->
+                <main>
+                    <p>So you're interested in joining our humble club? You're in luck! Our sign up form is open and ready for use! Just fill out our form and you'll officially be part of the club!</p>
+                </main>
+                <hr>
+                <form name="signUp" method="post" action="https://professorcooke.org/forms/processform.php">
+                    <fieldset>
+                        <legend>User Information</legend>
+                            <p>Let's get to know you! No pressure, or anything.</p>
+                            <label for="userName">Preferred Name </label><input type="text" name="userName" id="userName">
+                            <label for="userMajor">College Major </label><input type="text" name="userMajor" id="userMajor">
+                            <label for="userState">State of Residency </label><input type="text" name="userState" id="userState" value="Florida"><br><br>
+                            <label for="userAge">Age Range </label> 
+                                <input type="radio" name="userAge" value="userIsUnderage"> under 18
+                                <input type="radio" name="userAge" id= "userAge" value="userIsYoungAdult" checked> 18 - 20
+                                <input type="radio" name="userAge" value="userIsGrownAdult"> 21 or older
+                            <label for= "userMailing">Joining the Mailing List? </label><input type="checkbox" name="userMailing" id="userMailing">
+                            <label for= "userGenre">Favorite Genre </label><select name="userGenre" id="userGenre">
+                                <option value="IDK" selected>Not sure</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Horror">Horror</option>
+                                <option value="SciFi">Science Fiction</option>
+                                <option value="Action">Action</option>
+                            </select>
+                            <br><br>
+                            <label for="userJoin">Reasons for Joining </label> <br> <textarea name="userJoin" id="userJoin" cols="60" rows="3" style="margin-left: 30px;">Why do you want to sign up?</textarea><br>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Login Details</legend>
+                        <p>You'll need this if you want to be able to see club-exclusive events!</p>
+                        <label for="userEmail">Your Email* </label><input type="email" name="userEmail" id="userEmail"><br><br>
+                        <label for="userPassword">Your Password </label><input type="password" name="userPassword" id="userPassword"><br><br>
+                    <em>* Note: If you're not subscribed to the Mailing List, don't fret about missing out. Mailing List is just for fun extras like new releases or additional events.</em>
+                    </fieldset>
+                    <hr>
+                    <p>Almost there! Just click here! Don't panic, by the way, when you're taken to the process form! It just means you did everything right and we got your registration. The form also takes a moment to process, so just sit and don't move until you're taken to a new screen.</p>
+                    
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div> 
+   <!-- footer content -->
+   <footer>
+       <!-- put copyright info, then also put some additional links too, idk -->
+       2023 &copy; Kristyn Gonzalez
+   </footer>
+</body>
+</html>

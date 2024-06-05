@@ -1,0 +1,76 @@
+#mobileDropdown {
+    display:none;
+}
+
+.siteButton {
+    font-family: 'Roboto', sans-serif;
+    background-color: #465425;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.siteButton:hover, .siteButton:active{
+    background-color: rgba(59, 71, 29, 0.575);
+}
+
+@media screen and (max-width: 900px), (orientation: portrait) {
+    #contentBody {
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #tableOfContents, #calendarSidebar {
+        float: none;
+        padding: 15px;
+        min-width:15em;
+        min-height:15em;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    h1 {
+        font-size: 25px;
+        word-wrap: break-word;
+    }
+
+    #navigationLinks {
+        display: none;
+    }
+
+    #mobileDropdown {
+        display: inline-block;
+    }
+
+    #mobileNavLinks {
+        display: none;
+        position: absolute;
+        background-color: #465425;
+        overflow: auto;
+        margin-top: 0px;
+        left:0px;
+        width: 100%;
+        border: 1px solid #ffffff2c;
+    }
+
+    #mobileNavLinks a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: grid;
+        max-width: 80%;
+    }
+
+    #mobileNavLinks a:hover {
+        background-color: rgba(59, 71, 29, 0.575);
+        border-bottom:1px solid #ffffff2c; 
+    }
+    
+    #mobileDropdown:hover #mobileNavLinks {
+        display: block;
+    }
+}

@@ -1,0 +1,317 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+@font-face {
+	font-family: "Noto Serif Display";
+	src: url("NotoSerifDisplay-VariableFont_wdthwght.ttf");
+}
+
+@font-face {
+	font-family: "EB Garamond";
+	src: url("EBGaramond-VariableFont_wght.ttf");
+}
+
+/* basic elements */
+* {
+	margin: 0;
+	padding: 0;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+:root{
+	--clr-dark:#2d333f;
+	--clr-white:#ffffff;
+	--light-links: #ec8d8d;
+	
+}
+
+::selection {
+	background-color: #588b9431;
+}
+
+html {
+	background-color: var(--clr-white);
+}
+
+body { 
+	background-image: url(sun.png);
+	background-repeat: no-repeat;
+	background-position: center top;	
+	background-size: 30%;
+	font-family: "EB Garamond", serif;
+	font-weight: 400;
+}
+
+p {
+	font-size: 1.4em;
+	line-height: 1.6em;
+}
+
+strong, b, a {
+	font-weight: 800;
+}
+
+.page-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.intro {
+	background-color: transparent;
+	margin: 10% 10% 10%;
+	min-height: 75vh;
+	color: var(--clr-dark);
+}
+
+.intro a {
+	color: #DD3636;
+}
+
+.summary, .preamble {
+	margin-bottom: 2em;
+}
+
+.summary{
+	text-align: left;
+}
+.preamble{
+	text-align: right;
+}
+
+footer {
+	grid-column: span 2;
+	display: block;
+	position: relative;
+	width: 100%;
+	right: 0px;
+	bottom: 0px;
+	text-align: right;
+}
+
+footer a {
+	margin-right: 10px;
+}
+
+
+h1 {
+	font-family: "Noto Serif Display", serif;
+	font-weight: 600;
+	color: var(--clr-dark);
+	font-size: 7em;
+	text-align: center;
+	letter-spacing: 15px;
+	margin-bottom: 1em;
+}
+
+h2 {
+	font-size: 4em;
+}
+
+h3 {
+	font-size: 3.5em;
+}
+
+h2, h3 {
+	font-family: "Noto Serif Display", serif;
+	font-weight: 500;
+	font-variation-settings:
+    "wdth" 62.5;
+}
+
+/* links and their animations */
+
+a {
+	color: #ec8d8d;
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 1em;
+}
+
+a:after {
+	content: '';
+	transform: scaleX(0);
+	height: 1px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	background-color: var(--clr-dark);
+	transform-origin: bottom left;
+	transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.intro a:hover {
+	color: var(--clr-dark);
+	transition: 0.25s ease-out;
+}
+
+.supporting a:after, .sidebar a:after{
+	background-color: var(--clr-white);
+}
+
+.supporting a:hover, .sidebar a:hover{
+	color: var(--clr-white);
+	transition: 0.25s ease-out;
+}
+
+
+.supporting, .sidebar {
+	background-image: url(waves.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-color: var(--clr-dark);
+	color: var(--clr-white);
+}
+
+.supporting {
+	margin: 0;
+	padding: 7em;
+	display: grid;
+	gap:40px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, .1fr);
+}
+.supporting p {
+	text-align: justify;
+}
+
+.requirements, .benefits {
+	grid-column-end: span 2;
+}
+
+.sidebar {
+	margin: 0;
+	padding: 7em;
+	padding-bottom: 1.5em;
+}
+.sidebar ul {
+	list-style-type: none;
+}
+
+.sidebar li {
+	padding: 3px;
+}
+
+.sidebar h3 {
+	font-size: 3em;
+}
+
+.sidebar>.wrapper {
+	align-items: center;
+}
+.sidebar>.wrapper>.design-selection {
+	width: 33%;
+	text-align: center;
+	float: left;
+}
+.sidebar>.wrapper>.design-archives {
+	width: 33%;
+	text-align: center;
+	float: left;
+}
+.sidebar>.wrapper>.zen-resources {
+	width: 33%;
+	text-align: center;
+	float: left;
+}
+
+/* animation */
+@keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 5em;
+	}
+
+	h2, h3 {
+		font-size: 3em;
+	}
+	
+	.summary, .preamble {
+		margin-bottom: 2em;
+	}
+	
+	.supporting {
+		background-color: var(--clr-dark);
+		color: var(--clr-white);
+		margin: 0;
+		padding: 3em;
+		display: block;
+	}
+	
+	.benefits, .requirements, .participation, .explanation {
+		padding: 1.3em;
+	}
+
+	.sidebar h3 {
+		font-size: 2.5em;
+	}
+
+	.sidebar li {
+		padding: .7em;
+	}
+	.sidebar>.wrapper>.design-selection {
+		margin: auto;
+		padding: 1em;
+		float: none;
+	}
+
+	.sidebar>.wrapper>.design-archives {
+		margin: auto;
+		padding: 1em;
+		float: none;
+	}
+	.sidebar>.wrapper>.zen-resources {
+		margin: auto;
+		padding: 1em;
+		float: none;
+	}
+}
+
+/* scrolling animation */
+[role=article] {
+	view-timeline-name: --article_reveal;
+	view-timeline-axis: inline-block;
+
+	animation: reveal linear both;
+	animation-timeline: --article_reveal;
+	animation-range: 10% 40%;
+}
+.wrapper {
+	view-timeline-name: --wrapper_reveal;
+	view-timeline-axis: inline-block;
+
+	animation: reveal linear both;
+	animation-timeline: --wrapper_reveal;
+	animation-range: 5% 30%;
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

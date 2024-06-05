@@ -1,0 +1,5 @@
+headings, subheadings, etc (any title text essentially)
+- CroissantOne (SCRATCH THAT!! im using DMSerifDisplay)
+
+body, subtitles, etc (any smaller text)
+- Roboto 400, bold would be 500+

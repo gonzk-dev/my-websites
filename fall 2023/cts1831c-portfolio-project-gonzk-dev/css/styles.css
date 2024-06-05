@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(usedFonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(usedFonts/Poppins-Regular.ttf);
+}
+body {
+    background-color: #2f324e;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+}
+
+header {
+    background-color: #2f324e;
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    position:sticky;
+    height:150px;
+    top: 0;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 35px;
+}
+
+main {
+    background-color: #3B3E60;   
+}
+
+nav li {
+    list-style: none;
+    margin: 5px;
+    display: inline;
+    font-size: 22px;
+    padding:5px;
+}
+
+nav a {
+    text-decoration: none;
+    color:#fff;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transition: .3s;
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #B7EAE3;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+a:hover {
+    font-weight:bold;
+    color: #B7EAE3;
+    text-shadow: #fff 1px 0 10px;
+    transition: .3s;
+}
+
+a:visited {
+    color: #ffb2ce;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    color: #d8d5ff;
+    text-transform: uppercase;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 5px;
+    padding: 15px;
+    font-size: 13px;
+}
+footer ul {
+    margin: 0px;
+    padding-inline-start: 0px;
+}
+
+footer a {
+    color: #d8d5ff;
+}
+
+footer a:hover {
+    color: #ffb2ce;
+}
+
+footer a:visited {
+    color: #d8d5ff;
+}
+
+footer a:visited:hover {
+    color: #ffb2ce;
+}
+
+strong, b {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+}
+hr {
+    border:0;
+    border-top: 1px solid #606ea680;
+}
+
+p {
+    line-height: 2em;
+}
+
+legend {
+    font-family: 'Poppins', sans-serif;
+    font-size:25px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: strong;
+    text-align: center;
+}
+
+fieldset {
+    border-color: #606ea680;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+textarea, input[type="text"], input[type="email"]{
+    background-color:#2f324e;
+    color: #fff;
+    border: 1px solid #606ea680;
+    border-radius: 4px;
+    padding-block: 10px;
+    padding-inline: 10px;
+    width: 85%;
+}
+
+input[type="submit"] {
+    background-color:#2f324e;
+    color: #fff;
+    border: 1px solid #606ea680;
+    border-radius: 4px;
+    padding-block: 10px;
+    padding-inline: 10px;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: strong;
+}
+input[type="submit"]:hover {
+    background-color:#3f446e;
+}
+
+.bodyText {
+    padding: 2em;
+    text-align: justify;
+    min-height: 20em;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#webLogo {
+    float: left;
+    border: 0px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.socMed {
+    float: right;
+}
+
+.socMed li {
+    list-style: none;
+    margin: 5px;
+    display: inline;
+    font-size: large;
+    padding:5px;
+}
+@media screen and (max-width: 900px), (orientation: portrait) {
+    .bodyText {
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    nav li {
+        font-size: 25px;
+    }
+}

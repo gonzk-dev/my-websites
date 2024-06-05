@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "newsreader";
+    src: url(fonts/Newsreader-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "HindGuntur";
+    src: url(fonts/HindGuntur-Regular.ttf);
+}
+
+:root {
+    --bg-color: #fff;
+    --body-text: #252424;
+    --main-color: #1D3E57;
+    --accent-color: #406581;
+    --secondary-color: #d88b7dea;
+    --muted-color: #9d9fa0;
+    --muted-color2: #e1e1e1;
+}
+
+::selection {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--body-text) ;
+    margin:0px;
+    font-size: 1.25em;
+    font-family: "Hindguntur";
+}
+
+
+/* HEADER */
+
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    position: sticky;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    max-height: 50px;
+    margin: auto;
+    border-bottom: 1px solid var(--muted-color2);
+}
+
+header h1 {
+    font-family: "newsreader";
+    font-size: 2em;
+    padding: 0px;
+    display: inline;
+    color: var(--body-text);
+}
+
+header a {
+    text-decoration: none;
+}
+
+
+/* NAVIGATION */
+
+
+nav {
+    float: right;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1em;
+    color: var(--main-color);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+nav a:active{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+nav ul {
+    padding-inline-start: 0px;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    margin: 10px;
+}
+
+
+/* MAIN BODY */
+
+
+main {
+    padding: 30px;
+    margin: auto;
+    max-width: 800px;
+    min-height: 700px;
+    font-family: "newsreader", 'Times New Roman', Times, serif;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+main p {
+    margin-bottom: 1.1em;
+    line-height: 1.5em;
+}
+
+main h1 {
+    font-family: "newsreader";
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 3.5em;
+    margin-bottom: 1px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--muted-color2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main ul, main ol {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    line-height: 1.5em;
+}
+
+h2, h3 {
+    display: block;
+}
+
+h2 {
+    font-family: "newsreader";
+    color:var(--body-text);
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--accent-color);
+    font-size: 1.2em;
+    font-family: "HindGuntur";
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+hr {
+    border: 0px;
+    border-bottom: 1px solid var(--muted-color2);
+}
+
+
+/* FOOTER */
+
+
+
+footer {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 1em;
+    position: static;
+    bottom: 0px;
+    font-family: "HindGuntur";
+    text-align: center;
+    font-weight: 100;
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+footer a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--bg-color);
+}
+
+footer a:visited{
+    color: var(--bg-color);
+}
+
+footer ul {
+    padding-inline-start: 0px;
+}
+
+footer ul li {
+    display: inline;
+    list-style-type: none;
+    margin: 20px;
+}
+
+
+/* GENERAL */
+
+
+
+b, strong {
+    font-family: "newsreader";
+    font-weight: 700;
+}
+
+i, em {
+    font-style:oblique;
+}
+
+ol li::marker {
+    font-weight: bolder;
+    font-family: "newsreader";
+    color: var(--main-color);
+}
+
+input[type=text], input[type=email], input[type=search] {
+    padding: .5em;
+    min-width: 30%;
+    margin:auto;
+    border-radius: 30px;
+    border: 1px solid var(--muted-color2);
+}
+
+input[type=text], input[type=email] {
+    width: 90%;
+    margin: 10px;
+}
+
+input[type=submit] {
+    text-align: center;
+    padding: .5em;
+    margin-top: 20px;
+    min-width: 30%;
+    border-radius: 30px;
+    border: 1px solid var(--muted-color2);
+    background-color: var(--bg-color);
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    background-color: var(--muted-color2);
+}
+
+legend {
+    font-family: "newsreader";
+    color:var(--body-text);
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+label {
+    font-family: "HindGuntur";
+    color: var(--accent-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+fieldset {
+    border: none;
+    padding: 20px;
+}
+
+
+/* CLASSES */
+
+
+.bigList li {
+    padding: 2px;
+}
+
+.secondary {
+    text-transform: lowercase;
+    font-family: "newsreader";
+    font-weight:500;
+    font-style:oblique;
+    text-align: right;
+    color: var(--muted-color);
+    font-size: .8em;
+}
+
+.headerImg {
+    margin:auto;
+    margin-top:5px;
+    margin-bottom:5px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en-us">
+        <meta charset="utf-8">
+        <title>gonzk-dev | minigame</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            table{
+                margin: 2em;
+                min-width: 40em;
+                border-spacing: 0;
+                border-radius: 4px;
+            }
+            table, th, td {
+                border: 1px solid #606ea680;
+            }
+
+            th, td {
+                padding: 5px;
+            }
+
+            th {
+                font-family: 'Roboto', sans-serif;
+                text-transform:uppercase;
+                font-size: 20px;
+                background-color: #2f324e;
+            }
+        </style>
+    </head>
+    <!-- page for the portfolio part of the website -->
+    <body>
+        
+        <header>
+            <!-- icon used is a placeholder for the time being -->
+            <div>
+                <a href="index.html"><img src="images/logo.png" alt="temporary logo, depicts halloween version of mascot" width= "110" id="webLogo" draggable="false"></a>
+                <ul class="socMed">
+                    <li>github</li>
+                    <li>email</li>
+                </ul>
+                <h1>gonzk-dev</h1>
+            </div>
+            <nav>
+                <ul>
+                    <!-- these links do not work for the time being, they are only 'links' to add the style to -->
+                    <!-- the # only serves as a way to keep the user on the index page. -->
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="#"><b>minigame</b></a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+
+                
+            </nav>
+        </header>
+        
+        <main>
+            <!-- the div is so the main's background color is not contained only to the body text. if i put the margins to main, the colors of the body (which are darker) will appear as borders. just reminding you-->
+            <div style="text-align: center; padding: 20px;">
+                    <h2>Minigame</h2>
+                    <hr>
+                    <p>Play this minigame! When you find something of interest, click on it! You might get a prize. Follow the hint guide if you need help.
+                    <br><br>
+                    <em>note: Links open to a new tab.</em>
+                    </p>
+            </div>
+            
+            <div class="bodyText">
+                <!-- THIS IS THE BODY OF THE WEBSITE! Lorem Ipsum is used to allow for the formatting to be worked on -->
+                <div style="text-align:center">
+                    <img src="images/minigameImage.png" usemap="#minigameMap" alt="minigame image">
+                    <map name="minigameMap">
+                        <area coords="414,384,136" shape="circle" alt="Meringue studying at the desk" title="Meringue studying at the desk" href="merin.html" target="_blank">
+                        
+                        <area coords="105,477,247,137" shape="rect" alt="Potions floating to the left" title="Potions floating to the left" href="potions.html" target="_blank">
+                        
+                        <area coords="698,20,859,279" shape="rect" alt="Potions floating to the right" title="Potions floating to the right" href="potions.html" target="_blank">
+                        
+                        <area coords="612,457,847,580" shape="rect" alt="A book of magic" title="A book of magic" href="book.html" target="_blank" >
+                    </map>
+                    <br>
+                    <table style="margin-left: auto;
+                    margin-right: auto;">
+                        <tr>
+                            <!-- Hint Guide Header-->
+                            <th colspan="7">
+                                Hint Guide
+                            </th>
+                        </tr>
+                        <tr>
+                            <td><b>Item 1</b></td>
+                            <td>The subject of the illustration.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Item 2*</b></td>
+                            <td>To the left of the subject.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Item 3*</b></td>
+                            <td>To the right of the subject.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Item 4</b></td>
+                            <td>Closed off to the side, nearly enveloped by shadows.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <em>* these lead to the same page.</em>
+                                <br>
+                                If you find a link, hover over it for a bit to see what it says before continuing.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        
+        </main>
+
+        <footer>
+            2023 &copy; Kristyn Gonzalez<br>
+            All illustrations created by Kristyn Gonzalez<br><br>
+
+            <p style="text-transform: uppercase;">hyperlinks</p>
+            <ul>
+                <li><a href="portfolios.html">research</a></li>
+                <li><a href="wireframes.html">wireframes</a></li>
+                <li><a href="thoughts.html">thoughts</a></li>
+            </ul>
+        </footer>
+    
+    </body>
+    
+</html>

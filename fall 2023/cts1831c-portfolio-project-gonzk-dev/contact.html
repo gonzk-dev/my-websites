@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en-us">
+        <meta charset="utf-8">
+        <title>gonzk-dev | contact</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <!-- page for the portfolio part of the website -->
+    <body>
+        
+        <header>
+            <!-- icon used is a placeholder for the time being -->
+            <div>
+                <a href="index.html"><img src="images/logo.png" alt="temporary logo, depicts halloween version of mascot" width= "110" id="webLogo" draggable="false"></a>
+                <ul class="socMed">
+                    <li>github</li>
+                    <li>email</li>
+                </ul>
+                <h1>gonzk-dev</h1>
+            </div>
+            <nav>
+                <ul>
+                    <!-- these links do not work for the time being, they are only 'links' to add the style to -->
+                    <!-- the # only serves as a way to keep the user on the index page. -->
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="minigame.html">minigame</a></li>
+                    <li><a href="#"><b>contact</b></a></li>
+                </ul>
+
+                
+            </nav>
+        </header>
+        
+        <main>
+            <!-- the div is so the main's background color is not contained only to the body text. if i put the margins to main, the colors of the body (which are darker) will appear as borders. just reminding you-->
+            <div style="text-align: center; padding: 20px;">
+                    <h2>Contact me</h2>
+                    <hr>
+                    <p>Want to contact me? Fill out this form and we'll be in touch! Make sure to fill in everything.</p>
+            </div>
+            
+            <div class="bodyText">
+                <form name="signUp" method="post" action="https://professorcooke.org/forms/processform.php">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                            
+                            <label for="userName">Your Name </label>
+                            <br><input type="text" name="userName" id="userName">
+                            
+                            <br><br>
+                            
+                            <label for="userEmail">Your Email </label>
+                            <br><input type="email" name="userEmail" id="userEmail">
+                            
+                            <br><br>
+                            
+                            <label for="userReason">Reason for Contact </label> 
+                            <br>
+                                <input type="radio" name="userReason" value="userWork"> Work Offers
+                                <input type="radio" name="userReason" value="userCommission"> Art Commissions
+                                <input type="radio" name="userReason" value="userQuestion"> Questions
+                                <input type="radio" name="userReason" value="userReason" id= "userReason" checked> Other
+                            <br><br>
+                            
+                            <label for= "userUrgency">Is it urgent? </label><input type="checkbox" name="userUrgency" id="userUrgency">
+                            
+                            <br>
+                            <br>
+                            <label for="userJoin">Additional Reasons </label> <br> <textarea name="userJoin" id="userJoin" cols="60" rows="3" style="margin-left: 30px;">Use this only if your reason for contact is "Other" or you have any additional reason.</textarea><br>
+
+                            <p>When you're finished, click here to submit.</p><br>
+                            <input type="submit" value="Submit">
+                    </fieldset>
+                
+            </div>
+        
+        </main>
+
+        <footer>
+            2023 &copy; Kristyn Gonzalez<br>
+            All illustrations created by Kristyn Gonzalez<br><br>
+
+            <p style="text-transform: uppercase;">hyperlinks</p>
+            <ul>
+                <li><a href="portfolios.html">research</a></li>
+                <li><a href="wireframes.html">wireframes</a></li>
+                <li><a href="thoughts.html">thoughts</a></li>
+            </ul>
+        </footer>
+    
+    </body>
+    
+</html>

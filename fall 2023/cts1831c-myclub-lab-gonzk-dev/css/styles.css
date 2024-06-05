@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Noto Serif Display';
+    src: url(usedFonts/Noto_Serif_Display/NotoSerifDisplay-VariableFont_wdth\,wght.ttf);
+    src: url(usedFonts/Noto_Serif_Display/NotoSerifDisplay-Italic-VariableFont_wdth\,wght.ttf) font-italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(usedFonts/Roboto-Regular.ttf) font-weight-normal
+         url(usedFonts/Roboto-Bold.ttf) font-weight-bold
+         url(usedFonts/Roboto-Italic.ttf) font-italic
+         url(usedFonts/Roboto-BoldItalic.ttf) font-italic font-weight-bold;
+}
+header {
+    color: #f1f2ed;
+    background: #465425;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    top: 0;
+    position: sticky;
+}
+p {
+    margin: 1em;
+    text-align: justify;
+}
+h1 {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 40px;    
+}
+h2, h3, h4, legend {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+legend {
+    font-size: 1.5em;
+}
+label {
+    margin-left: 1.6em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+fieldset {
+    margin: 50px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius:4px;
+}
+nav {
+    float: right;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav li {
+    list-style: none;
+    margin: 5px;
+    display: inline;
+}
+
+nav a, nav a:visited {
+    color: #f1f2ed;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d1ed91;
+    transition: 1s;
+}
+
+header h1 {
+    float: left;
+    text-align: left;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #465425;
+    margin:0px;
+}
+
+a{
+    color:#537a04;
+}
+
+a:hover{
+    color:#343b26;
+}
+
+a:visited{
+    color:#047a6a;
+}
+
+footer {
+    clear: both;
+    text-align:center;
+    color: #f1f2ed;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+#content {
+    padding:1em 2em;
+    
+    background-color: #f1f2ed;
+    color: #343b26;
+    min-height: 45em;
+}
+#contentBody {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#tableOfContents {
+    padding:1em;
+    border: 1px solid black;
+    border-radius:4px;
+    float: right;
+    margin: 2em;
+    min-width:20em;
+    min-height:20em;
+}
+
+#tableOfContents ol {
+    list-style-type: upper-roman;
+}
+
+#tableOfContents li::marker{
+    font-family: 'CroissantOne';    
+}
+
+#mobileDropdown {
+    display:none;
+}
+/*
+#disclaimer {
+    padding:1em;
+    margin: auto;
+    text-align: center;
+    background-color: #ff5c4a63;
+    color: #7e261f;
+}*/
